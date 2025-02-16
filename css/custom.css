@@ -1,0 +1,490 @@
+/* Custom Styles */
+body {
+    font-family: 'Merriweather', serif;
+    color: #5A082D;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    position: absolute; /* Position navbar absolutely */
+    top: 0; /* Place it at the top */
+    left: 0;
+    width: 100%;
+    z-index: 10; /* Ensure it's above the background image and Rectangle 36 */
+    background: transparent !important; /* Make navbar background transparent */
+}
+
+.navbar-brand {
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    font-weight: 400;
+    color: #5A082D !important; /* Ensure brand name is visible */
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img.logo {
+    width: 72px;
+    height: 93px;
+    margin-right: 10px;
+}
+
+.nav-link {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    margin-left: 20px;
+    color: #5A082D !important; /* Ensure nav links are visible */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 0%;
+}
+
+/* Navbar Active Link */
+.nav-link.active {
+    font-weight: bold; /* Highlight active link */
+    color: #5A082D !important; /* Ensure color matches theme */
+    border-bottom: 2px solid #5A082D; /* Add underline for active link */
+}
+
+.nav-link.contact-us {
+    position: relative;
+    z-index: 2; /* Ensures text stays above the rectangle */
+    background-color: #FFFFF0; /* Gold background color */
+    color: #5A082D !important; /* Text color */
+    border-radius: 50px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+.nav-link.contact-us:hover {
+    background-color: #5A082D; /* Darker background on hover */
+    color: #FFD700 !important; /* Text color on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+.nav-link.contact-us::before {
+    content: '\260E'; /* Telephone icon */
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 18px; /* Icon size */
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 1080px; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+/* Rectangle 36 */
+.rectangle-36 {
+    position: absolute;
+    width: 100%; /* Full width */
+    height: 156px; /* Height as specified */
+    top: 0; /* Position at the top */
+    left: 0;
+    background: #FADADD; /* Background color */
+    opacity: 0.65; /* Opacity */
+    z-index: 2; /* Ensure it's above the background image but below the navbar */
+}
+
+/* Background Image */
+.background-image {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    background: url('images/wedding-luxury-background-illustration_327072-26983.jpg') no-repeat center center/cover;
+    z-index: 1; /* Below Rectangle 36 and navbar */
+}
+
+/* Gradient Rectangle */
+.gradient-rectangle {
+    position: absolute;
+    width: 100%;
+    height: 924px; /* Adjust height as needed */
+    top: 156px; /* Position below Rectangle 36 */
+    background: linear-gradient(0deg, rgba(217, 217, 217, 0.2) 0%, rgba(229, 229, 229, 0.35) 67.27%, rgba(250, 218, 221, 0.65) 100%);
+    z-index: 3; /* Above Rectangle 36 and background image */
+}
+
+/* Hero Content */
+.hero-content {
+    position: relative;
+    z-index: 4; /* Above all other elements */
+    padding-top: 150px; /* Adjust padding to center the text */
+    color: #5A082D;
+    text-align: center;
+}
+
+.hero-content h1, .hero-content h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px; /* Size for "Crafting Your Dream Wedding, One Detail at a Time" */
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    font-weight: bold;
+    margin: 0; /* Remove default margin */
+}
+
+/* Services Section */
+.services-section {
+    position: relative; /* Make it relative for proper positioning */
+    top: -350px; /* Move it up to overlap the hero section */
+    padding: 50px 0; /* Add padding for spacing */
+    z-index: 5; /* Ensure it's above the background image */
+}
+
+.services-section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-align: center; /* Center the text */
+}
+
+.services-section img {
+    border-radius: 50%; /* Make images circular */
+    width: 150px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    object-fit: cover; /* Ensure images fill the circle */
+    margin: 0 auto; /* Center the images */
+    display: block; /* Ensure margin auto works */
+}
+
+/* Rectangle 39 and Text Section */
+.rectangle-39-section {
+    position: relative;
+    width: 100%;
+    height: 90px;
+    margin-top: -50%; /* Adjust spacing below services section */
+    z-index: 6; /* Ensure it's above other elements */
+}
+
+/* Company Information Carousel */
+#companyInfoCarousel {
+    margin-top: -360px; /* Move the carousel up closer to the services section */
+    z-index: 5; /* Ensure it's above other elements */
+    background: linear-gradient(135deg, rgba(250, 218, 221, 0.9), rgba(255, 255, 240, 0.9)); /* Gradient Background */
+    padding: 60px 20px; /* Add padding for spacing */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transform: scale(0.9);
+    transform-origin: center;
+}
+
+.company-info {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 15px; /* Rounded corners */
+    padding: 40px; /* Increased padding */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+.company-info p {
+    font-family: 'Lora', serif;
+    font-size: 1.4rem; /* Larger font size */
+    color: #5A082D;
+    line-height: 1.8; /* Improved readability */
+}
+
+.company-info .btn-primary {
+    background-color: #5A082D; /* Match the theme color */
+    border: none;
+    padding: 12px 30px; /* Larger button */
+    font-size: 1.2rem;
+    border-radius: 50px; /* Rounded button */
+    transition: background-color 0.3s ease;
+}
+
+.company-info .btn-primary:hover {
+    background-color: #7A0A3D; /* Darker shade on hover */
+}
+
+/* Carousel Controls */
+.carousel-control-prev, .carousel-control-next {
+    width: 50px; /* Larger controls */
+    height: 50px;
+    background-color: rgba(90, 8, 45, 0.8); /* Semi-transparent background */
+    border-radius: 50%; /* Circular buttons */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: brightness(0) invert(1); /* Make icons white */
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Client Reviews Section */
+.client-reviews-section {
+    position: relative;
+    margin-top: 50px; /* Adjust spacing from the company information section */
+    padding: 60px 20px;
+    background: rgba(250, 218, 221, 0.8); /* Soft pink background with opacity */
+    text-align: center;
+}
+
+.review-button {
+    width: 15%; /* Adjust width as needed */
+    padding: 10px;
+    font-size: 12px;
+    font-family: 'Merriweather', serif;
+    background: #F8CD8B;
+    border: none;
+    border-radius: 30px;
+    color: #5A082D;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    position: absolute; /* Position the button absolutely within the container */
+    top: 30px; /* Adjust this value to position the button at the top of the pink rectangle */
+    left: 90%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 2; /* Ensure the button is above other elements */
+}
+
+.review-button:hover {
+    background: #e0b87d;
+}
+.section-title h2 {
+    font-family: 'Lora', serif; /* Elegant cursive font */
+    font-size: 40px; /* Reduced font size */
+    font-weight: 400;
+    color: #5A082D;
+    margin-bottom: 60px;
+    padding: 20px;
+    display: inline-block;
+    border-bottom: 2px solid #5A082D; /* Subtle underline */
+}
+
+.review-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.review-card {
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 30px;
+    max-width: 1000px; /* Slightly narrower for better focus */
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.review-card:hover {
+    transform: translateY(-10px); /* Lift card on hover */
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.client-image img {
+    width: 200px; /* Smaller image size */
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 40px;
+    border: 4px solid #FADADD; /* Soft border color */
+}
+
+.review-text {
+    text-align: left;
+    max-width: 600px; /* Limit text width for readability */
+}
+
+.review-text p {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 18px; /* Reduced font size */
+    line-height: 1.8; /* Improved line spacing */
+    color: #5A082D;
+    margin-bottom: 20px;
+}
+
+.review-text h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 24px; /* Reduced font size */
+    font-weight: 700;
+    color: #5A082D;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.see-more-button {
+    margin-top: 40px;
+}
+
+.btn-see-more {
+    background: #5A082D;
+    color: #FFFFFF;
+    font-family: 'Merriweather', serif;
+    font-size: 20px; /* Reduced font size */
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-see-more:hover {
+    background: #7A0A3D; /* Darker shade on hover */
+}
+
+/* Modal Styles */
+.modal-content {
+    background: rgba(250, 218, 221, 0.9); /* Soft pink background with opacity */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.modal-header {
+    border-bottom: none; /* Remove default border */
+}
+
+.modal-title {
+    font-family: 'Lora', serif;
+    font-size: 30px;
+    color: #5A082D;
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.modal-footer {
+    border-top: none; /* Remove default border */
+    justify-content: center; /* Center the button */
+}
+
+.btn-close {
+    background: none;
+    border: none;
+    font-size: 1
+}
+
+/* Footer Styles */
+footer {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background: #FADADD;
+    margin-top: 0px; /* Adjust as needed */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 2px solid #5A082D;
+    padding-bottom: 20px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-left: -50px
+}
+
+.footer-logo img {
+    width: 60px;
+    height: 70px;
+    margin-right: 20px;
+    margin-top: -15%;
+}
+
+.footer-logo h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    font-weight: 400;
+    color: #5A082D;
+    margin-top: -10%;
+}
+
+.footer-info {
+    text-align: center; /* Center-align the contact info */
+}
+
+.footer-info p {
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    font-style: italic;
+    color: #5A082D;
+    margin: 15px 0; /* Space between contact info lines */
+    margin-top: -2%;
+    margin-left: 20%;
+    align-items: center;
+}
+.footer-links {
+    display: flex;
+    gap: 100px;
+    margin-top: -25px; /* Move the links up */
+    margin-right: 6%;
+}
+
+.footer-column h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 800;
+    color: #5A082D;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    font-style: italic;
+    color: #5A082D;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.footer-copyright p {
+    font-family: 'Lora', serif;
+    font-size: 13px;
+    font-style: italic;
+    color: #5A082D;
+    margin-top: -2%;
+    margin-bottom: 0px;
+    margin-left: -4%;
+}

@@ -1,0 +1,269 @@
+/* General Styles */
+body {
+    font-family: 'Merriweather', serif;
+    color: #5A082D;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background: transparent !important;
+}
+
+.navbar-brand {
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    font-weight: 400;
+    color: #5A082D !important;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img.logo {
+    width: 72px;
+    height: 93px;
+    margin-right: 10px;
+}
+
+.nav-link {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    margin-left: 20px;
+    color: #5A082D !important;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 0%;
+}
+
+/* Navbar Active Link */
+.nav-link.active {
+    font-weight: bold; /* Highlight active link */
+    color: #5A082D !important; /* Ensure color matches theme */
+    border-bottom: 2px solid #5A082D; /* Add underline for active link */
+}
+
+.nav-link.contact-us {
+    position: relative;
+    z-index: 2; /* Ensures text stays above the rectangle */
+    background-color: #FFFFF0; /* Gold background color */
+    color: #5A082D !important; /* Text color */
+    border-radius: 50px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+.nav-link.contact-us:hover {
+    background-color: #5A082D; /* Darker background on hover */
+    color: #FFD700 !important; /* Text color on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+.nav-link.contact-us::before {
+    content: '\260E'; /* Telephone icon */
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 18px; /* Icon size */
+}
+
+/* Rectangle 66 */
+.rectangle-66 {
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    left: 0;
+    top: 0;
+    background: #FADADD;
+    z-index: 1;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 1070px;
+    overflow: hidden;
+}
+
+/* Background Image */
+.background-image {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    background: url('images/Untitled\ design\ \(13\).png') no-repeat center center/cover;
+    z-index: -2;
+    margin-top: 9%;
+    opacity: 0.4;
+}
+
+.container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Hero Content */
+.hero-content {
+    position: absolute;
+    top: 140px; /* Adjust this value to position the text below rectangle-66 */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 1; /* Ensure the text is above the background image */
+    color: #5A082D; /* Adjust text color to match your design */
+}
+
+.hero-content h1,
+.hero-content h2 {
+    font-family: 'Great Vibes', cursive; /* Adjust font family as needed */
+    font-size: 48px; /* Adjust font size as needed */
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.2;
+    z-index: 2;
+}
+
+/* Pink Rectangle (Background for Form) */
+.pink-rectangle {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 900px;
+    height: 800px;
+    background: #FADADD;
+    border-radius: 50px;
+    z-index: -1;
+    margin-top: -50%;
+}
+
+.review-button {
+    width: 50%; /* Adjust width as needed */
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Merriweather', serif;
+    background: #F8CD8B;
+    border: none;
+    border-radius: 50px;
+    color: #5A082D;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    position: absolute; /* Position the button absolutely within the container */
+    top: -380px; /* Adjust this value to position the button at the top of the pink rectangle */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 2; /* Ensure the button is above other elements */
+}
+
+.review-button:hover {
+    background: #e0b87d;
+}
+
+
+/* Text Sections with Vertical Line */
+.text-sections {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -300px;
+}
+
+.left-text {
+    width: 45%;
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: center;
+    padding-left: 20%;
+    margin-top: -300px;
+}
+
+.right-text {
+    width: 45%;
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: left;
+    padding-left: 20px; /* Adjust padding to bring text closer to the vertical line */
+    margin-top: -300px;
+}
+
+.vertical-line {
+    width: 2px;
+    height: 250px;
+    background: #5A082D;
+    margin: 0 10px; /* Adjust margin to bring the line closer to the right text */
+    margin-top: -300px;
+}
+
+/* Form Section */
+.form-section {
+    position: relative;
+    background: #FADADD;
+    padding: 0px;
+    z-index: 1;
+    margin-top: 250px;
+    margin-left: 20%;
+    width: 60%
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.form-row input,
+.form-row textarea {
+    width: 45%;
+    padding: 15px;
+    font-size: 15px;
+    font-family: 'Mirza', serif;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.6);
+    color: #5A082D;
+    outline: none;
+}
+
+.form-row textarea {
+    width: 100%;
+    height: 120px;
+    border-radius: 20px;
+    resize: none;
+}
+
+.submit-button {
+    width: 50%;
+    transform: scale(0.8);
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Merriweather', serif;
+    background: #F8CD8B;
+    margin-left: 26%;
+    border: none;
+    border-radius: 50px;
+    color: #5A082D;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+    background: #e0b87d;
+}
+
+.thank-you-message {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: center;
+    color: #5A082D;
+    padding: 20px;
+    background: #FADADD;
+    margin-top: 330px;
+    width:70%;
+    margin-left: 15%;
+}

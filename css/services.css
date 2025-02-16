@@ -1,0 +1,364 @@
+/* Navbar */
+.navbar {
+    position: absolute; /* Position navbar absolutely */
+    top: 0; /* Place it at the top */
+    left: 0;
+    width: 100%;
+    z-index: 10; /* Ensure it's above the background image and Rectangle 36 */
+    background: transparent !important; /* Make navbar background transparent */
+}
+
+.navbar-brand {
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    font-weight: 400;
+    color: #5A082D !important; /* Ensure brand name is visible */
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img.logo {
+    width: 72px;
+    height: 93px;
+    margin-right: 10px;
+}
+
+.nav-link {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    margin-left: 20px;
+    color: #5A082D !important; /* Ensure nav links are visible */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 0%;
+}
+
+/* Navbar Active Link */
+.nav-link.active {
+    font-weight: bold; /* Highlight active link */
+    color: #5A082D !important; /* Ensure color matches theme */
+    border-bottom: 2px solid #5A082D; /* Add underline for active link */
+}
+
+.nav-link.contact-us {
+    position: relative;
+    z-index: 2; /* Ensures text stays above the rectangle */
+    background-color: #FFFFF0; /* Gold background color */
+    color: #5A082D !important; /* Text color */
+    border-radius: 50px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+.nav-link.contact-us:hover {
+    background-color: #5A082D; /* Darker background on hover */
+    color: #FFD700 !important; /* Text color on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+.nav-link.contact-us::before {
+    content: '\260E'; /* Telephone icon */
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 18px; /* Icon size */
+}
+
+.nav-link.active {
+    font-weight: bold; /* Highlight active link */
+    border-bottom: 2px solid #5A082D; /* Add underline for active link */
+}
+
+/* Services Page */
+.services-page {
+    position: relative;
+    margin-top: 156px; /* Adjusted for navbar height */
+    padding: 20px;
+    text-align: center; /* Center the title */
+}
+
+/* Page Title */
+.page-title {
+    position: absolute;
+    width: 254px;
+    height: 86px;
+    left: calc(50% - 254px/2);
+    top: 20px;
+    z-index: 3; /* Ensure it is above the navbar */
+    margin-top: -170px;
+    margin-left: -2%;
+}
+
+.page-title h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 70px; /* Adjusted font size */
+    font-weight: 400;
+    color: #5A082D;
+    backdrop-filter: blur(2px);
+    padding: 20px;
+    display: inline-block;
+    margin: 0 auto; /* Center the title */
+}
+
+/* Rectangle 66 */
+.rectangle-66 {
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    left: 0;
+    top: 0;
+    background: #FADADD;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+.contact-us-banner {
+    margin-left: -2%;
+    margin-bottom: 50px; /* Space between the banner and the services grid */
+    margin-top: -50px;
+}
+
+.contact-us-banner .btn {
+    font-family: 'Merriweather', serif;
+    background-color: #F7E7CE; /* Gold background color */
+    color: #5A082D; /* Text color */
+    padding: 10px 20px; /* Padding for better spacing */
+    border-radius: 50px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+    width: 25%
+}
+
+.contact-us-banner .btn:hover {
+    background-color: #e7c797; /* Darker background on hover */
+    color: #5A082D /* Text color on hover */
+}
+
+/* Services Grid Section */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 30px; /* Space between cards */
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1200px; /* Limit maximum width */
+    margin-top: -5%;
+}
+
+.service-card {
+    background: #FFF5F7; /* Soft pink background */
+    border: 1px solid #FADADD;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px); /* Lift card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: #5A082D;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    color: #5A082D;
+    margin-bottom: 20px;
+}
+
+.service-card .learn-more {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    color: #FFF;
+    background: #5A082D;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.service-card .learn-more:hover {
+    background: #7A103F; /* Darker shade on hover */
+}
+
+.service-card .price {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    color: #5A082D;
+    font-weight: 600; /* Bold for emphasis */
+    margin-bottom: 20px;
+}
+
+/* Highlight effect for the selected service card */
+.service-card.highlighted {
+    border: 2px solid #5A082D !important;
+    background-color: #FFF0F5 !important;
+    transition: all 0.3s ease;
+}
+
+/* Service Information */
+.service-info {
+    margin-bottom: 20px; /* Space between info and accordion */
+}
+
+.service-info p {
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    color: #5A082D;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(104, 17, 56, 0.9); /* Darker overlay with theme color */
+}
+
+.modal-content {
+    background-color: #FFF5F7; /* Soft pink background */
+    margin: 10% auto; /* 10% from the top and centered */
+    padding: 20px;
+    border: 1px solid #FADADD;
+    width: 90%; /* Wider modal for better readability */
+    max-width: 800px; /* Limit maximum width */
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+    animation: fadeIn 0.3s ease-in-out; /* Fade-in animation */
+    position: relative;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Close Button */
+.close {
+    color: #5A082D;
+    position: absolute; /* Position the close button */
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: #7A103F; /* Darker shade on hover */
+}
+
+/* Accordion Styles */
+.accordion {
+    margin-top: 20px;
+}
+
+.accordion-item {
+    background: #FFFFFF;
+    border: 1px solid #FADADD;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+}
+
+.accordion-header {
+    width: 100%;
+    padding: 15px 20px;
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #5A082D;
+    background: #FFF5F7;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+    background: #FADADD; /* Slightly darker pink on hover */
+}
+
+.accordion-icon {
+    font-size: 24px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 800px; /* Adjust based on content */
+    padding: 20px;
+}
+
+.accordion-content ul {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0;
+    margin: 0;
+}
+
+.accordion-content li {
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    color: #5A082D;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.accordion-content li::before {
+    content: "•";
+    color: #FADADD; /* Soft pink bullet */
+    font-size: 24px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+.accordion-content li:hover {
+    color: #7A103F; /* Darker shade on hover */
+}
+

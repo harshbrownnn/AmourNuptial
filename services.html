@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmourNuptial - Services</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&family=Merriweather&display=swap" rel="stylesheet">
+    <style>
+        .highlight {
+            border: 2px solid #5A082D;
+            box-shadow: 0 0 10px rgba(90, 8, 45, 0.5);
+        }
+        .accordion-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Rectangle 66 -->
+    <div class="rectangle-66"></div>
+
+ <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <!-- Logo and Brand Name (Both linked to Homepage) -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="images/logo2.png" alt="AmourNuptial Logo" class="logo me-2">
+            <span class="brand-name">AmourNuptial</span>
+        </a>
+            <!-- Navbar Toggler for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#companyInfoCarousel">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="rectangle-50"></div>
+                        <a class="nav-link contact-us" href="contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Page Content -->
+    <div class="services-page">
+        <!-- Page Title -->
+        <div class="page-title">
+            <h1>Services</h1>
+        </div>
+<!-- Unsure of which service to pick? Button -->
+<div class="contact-us-banner">
+    <a href="contactus.html#formSection" class="btn btn-primary mt-3">Unsure of which Service to pick? Get in touch with us!</a>
+</div>
+
+        <!-- Services Grid Section -->
+        <div class="services-grid">
+            <!-- Service Card 1: Full-Service Planning -->
+            <div class="service-card" id="full-service">
+                <img src="images/3.png" alt="Full-Service Planning">
+                <h3>Full-Service Planning</h3>
+                <p>From start to finish, we handle every detail of your wedding.</p>
+                <p class="price">Starting from <strong>CA$8000</strong></p>
+                <button class="learn-more" data-service="full-service" data-info=Our Full-Service Wedding Package is designed for couples seeking a seamless and high-touch experience. From the initial stages of planning to the last dance on your wedding day or weekend, we oversee every detail with meticulous care. This comprehensive package includes, but is not limited to:">
+                    Learn More
+                </button>
+            </div>
+
+            <!-- Service Card 2: Partial Planning -->
+            <div class="service-card" id="partial-planning">
+                <img src="images/4.png" alt="Partial Planning">
+                <h3>Partial Planning</h3>
+                <p>We assist with specific aspects of your wedding planning.</p>
+                <p class="price">Starting from <strong>CA$5000</strong></p>
+                <button class="learn-more" data-service="partial-planning" data-info=Our Partial Planning Package is perfect for couples who want to take a more active role in planning their wedding while benefiting from professional guidance to ensure everything runs smoothly. This package strikes the right balance, allowing you to enjoy the process without feeling overwhelmed.">
+                    Learn More
+                </button>
+            </div>
+
+            <!-- Service Card 3: Day-of Coordination -->
+            <div class="service-card" id="day-coordination">
+                <img src="images/6.png" alt="Day-of Coordination">
+                <h3>Day-of Coordination</h3>
+                <p>We ensure your wedding day runs smoothly and stress-free.</p>
+                <p class="price">Starting from <strong>CA$3000</strong></p>
+                <button class="learn-more" data-service="day-coordination" data-info=Our Day-Of Coordination Package is designed for couples who have planned their wedding but need expert assistance to ensure a flawless execution on their special day. With this package, you can relax and fully immerse yourself in the joy of your celebration while we handle all the details.">
+                    Learn More
+                </button>
+            </div>
+
+            <!-- Service Card 4: Destination Wedding -->
+            <div class="service-card" id="destination-wedding">
+                <img src="images/7.png" alt="Destination Wedding">
+                <h3>Destination Wedding</h3>
+                <p>Plan your dream wedding in a breathtaking location.</p>
+                <p class="price">Starting from <strong>CA$10000</strong></p>
+                <button class="learn-more" data-service="destination-wedding" data-info="Our Destination Wedding Planning Package is perfect for couples dreaming of a magical wedding in a stunning location. From navigating the logistics to bringing your vision to life, we provide expert support to ensure a seamless and unforgettable celebration, no matter where your journey takes you.">
+                    Learn More
+                </button>
+            </div>
+
+            <!-- Service Card 5: Decor Consultation -->
+            <div class="service-card" id="decor-consultation">
+                <img src="images/5.png" alt="Decor Consultation">
+                <h3>Decor Consultation</h3>
+                <p>Create a stunning wedding theme with our expert designers.</p>
+                <p class="price">Starting from <strong>CA$2000</strong></p>
+                <button class="learn-more" data-service="decor-consultation" data-info="Our Theme, Decoration, and Styling Consultation package is perfect for couples who want their wedding to reflect their unique style and vision. From conceptualizing a stunning theme to meticulously planning each decorative detail, we provide expert guidance to ensure your wedding day is visually captivating and unforgettable.">
+                    Learn More
+                </button>
+            </div>
+
+            <!-- Service Card 6: Culture & Traditions -->
+            <div class="service-card" id="culture-traditions">
+                <img src="images/8.png" alt="Culture & Traditions">
+                <h3>Culture & Traditions</h3>
+                <p>Incorporate your cultural heritage into your wedding.</p>
+                <p class="price">Starting from <strong>CA$2500</strong></p>
+                <button class="learn-more" data-service="culture-traditions" data-info="Our Culture and Traditions package is designed for couples who want to infuse their wedding with meaningful cultural elements, creating a celebration that honors their heritage and traditions. From traditional ceremonies to cultural attire and rituals, we help integrate these beautiful customs seamlessly into your wedding day, ensuring a rich and authentic experience for you and your guests.">
+                    Learn More
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Modal 1: Full-Service Planning -->
+<div id="full-service-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Full-Service Planning</h2>
+        <div class="service-info">
+            <p>Our Full-Service Wedding Package is designed for couples seeking a seamless and high-touch experience. From the initial stages of planning to the last dance on your wedding day or weekend, we oversee every detail with meticulous care. This comprehensive package includes, but is not limited to:</p>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-header">Pre-Wedding Planning</button>
+                <div class="accordion-content">
+                    <p>Crafting a customized wedding planning timeline and checklist.</p>
+                    <p>Setting priorities, managing budgets, and tracking expenses.</p>
+                    <p>Scouting and securing ceremony and reception venues.</p>
+                    <p>Providing expert vendor recommendations, negotiation support, and bookings.</p>
+                    <p>Managing vendors throughout the planning process.</p>
+                    <p>Designing and executing a personalized wedding theme.</p>
+                    <p>Organising save-the-dates, invitations, and printed materials.</p>
+                    <p>Tracking guest RSVPs and coordinating wedding favors and accessories.</p>
+                    <p>Arranging accommodations, transportation, and childcare.</p>
+                    <p>Preparing welcome bags for your guests.</p>
+                    <p>Guiding you through the marriage license process and offering etiquette advice.</p>
+                    <p>Offering unlimited consultations and meetings.</p>
+                    <p>Confirming details with all vendors and attending vendor meetings.</p>
+                    <p>Leading the ceremony rehearsal.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">Wedding Day Coordination</button>
+                <div class="accordion-content">
+                    <p>Unlimited on-site coordination with a dedicated planner and assistant.</p>
+                    <p>Managing the ceremony processional and ensuring smooth transitions.</p>
+                    <p>Overseeing the setup of the ceremony and reception, including guest books, place cards, favors, and more.</p>
+                    <p>Coordinating boutonnière pinning and flower distribution for VIPs.</p>
+                    <p>Serving as the main point of contact for all vendors.</p>
+                    <p>Supporting the wedding party, family, and guests throughout the event.</p>
+                    <p>Handling final payments and gratuities for vendors.</p>
+                    <p>Providing an emergency kit for last-minute needs.</p>
+                    <p>Addressing unforeseen issues with professionalism and discretion.</p>
+                    <p>Managing post-event load-out.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">Optional Add-Ons</button>
+                <div class="accordion-content">
+                    <p>Coordination and planning for additional events such as welcome parties, rehearsal dinners, or post-wedding brunches.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Modal 2: Partial Planning -->
+<div id="partial-planning-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Partial Planning</h2>
+        <div class="service-info">
+            <p>Our Partial Planning Package is perfect for couples who want to take a more active role in planning their wedding while benefiting from professional guidance to ensure everything runs smoothly. This package strikes the right balance, allowing you to enjoy the process without feeling overwhelmed.</p>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-header">Pre-Wedding Support</button>
+                <div class="accordion-content">
+                    <p>Crafting a personalised wedding planning checklist.</p>
+                    <p>Three in-depth pre-wedding consultations.</p>
+                    <p>Conducting a venue site walk to finalize arrangements.</p>
+                    <p>Providing tailored vendor recommendations.</p>
+                    <p>Reviewing vendor contracts to ensure all details are covered.</p>
+                    <p>Designing a detailed venue layout and diagram.</p>
+                    <p>Creating a comprehensive wedding day timeline.</p>
+                    <p>Confirming all details with vendors before the big day.</p>
+                    <p>Leading the ceremony rehearsal to ensure everyone knows their role.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">Wedding Day Coordination</button>
+                <div class="accordion-content">
+                    <p>Full on-site support with your coordinator and an assistant, allowing you to focus on celebrating.</p>
+                    <p>Directing the ceremony processional for seamless transitions.p>
+                    <p>Overseeing the setup of the ceremony and reception areas.</p>
+                    <p>Arranging wedding accessories such as guest books, place cards, and favors.</p>
+                    <p>Coordinating boutonnière pinning and ensuring flowers are distributed to VIPs.</p>
+                    <p>Serving as the main point of contact for vendors to handle logistics.</p>
+                    <p>Assisting the wedding party and guests throughout the day.</p>
+                    <p>Managing final payments and gratuities for vendors.</p>
+                    <p>Supplying a fully stocked emergency kit for any last-minute needs.</p>
+                    <p>Addressing and resolving unexpected issues with professionalism..</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 3: Day-of Coordination -->
+<div id="day-coordination-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Day-of Coordination</h2>
+        <div class="service-info">
+            <p>Our Day-Of Coordination Package is designed for couples who have planned their wedding but need expert assistance to ensure a flawless execution on their special day. With this package, you can relax and fully immerse yourself in the joy of your celebration while we handle all the details.</p>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-header">Pre-Wedding Preparation</button>
+                <div class="accordion-content">
+                    <p>A detailed consultation one month before the wedding to finalise plans.</p>
+                    <p>Reviewing your vendor contracts to ensure nothing is overlooked.</p>
+                    <p>Creating a customized wedding day timeline.</p>
+                    <p>Conducting a venue walkthrough to discuss logistics and layout.</p>
+                    <p>Confirming all details with vendors prior to the event.</p>
+                    <p>Coordinating the ceremony rehearsal to ensure everyone is prepared.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">Wedding Day Coordination</button>
+                <div class="accordion-content">
+                    <p>Unlimited on-site support from your dedicated coordinator and assistant.</p>
+                    <p>Overseeing the setup of the ceremony and reception, including décor, seating arrangements, and accessories.</p>
+                    <p>Managing the ceremony processional for a smooth flow.</p>
+                    <p>Coordinating the pinning of boutonnières and flower distribution for VIPs.</p>
+                    <p>Acting as the primary point of contact for vendors to manage all logistics.</p>
+                    <p>Assisting the couple, wedding party, and guests as needed throughout the day.</p>
+                    <p>Ensuring the timeline is followed and transitions happen seamlessly.</p>
+                    <p>Handling final payments and gratuities for vendors.</p>
+                    <p>Supplying a fully stocked emergency kit for any last-minute needs.</p>
+                    <p>Troubleshooting and resolving any unforeseen issues to keep your day stress-free.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 4: Destination Wedding -->
+<div id="destination-wedding-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Destination Wedding</h2>
+        <div class="service-info">
+            <p>Our Destination Wedding Planning Package is perfect for couples dreaming of a magical wedding in a stunning location. From navigating the logistics to bringing your vision to life, we provide expert support to ensure a seamless and unforgettable celebration, no matter where your journey takes you.</p>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-header">Pre-Wedding Planning</button>
+                <div class="accordion-content">
+                    <p>Crafting a customized wedding planning timeline and checklist.</p>
+                    <p>Setting priorities, managing budgets, and tracking expenses.</p>
+                    <p>Scouting and securing ceremony and reception venues.</p>
+                    <p>Providing expert vendor recommendations, negotiation support, and bookings.</p>
+                    <p>Managing vendors throughout the planning process.</p>
+                    <p>Designing and executing a personalized wedding theme.</p>
+                    <p>Organising save-the-dates, invitations, and printed materials.</p>
+                    <p>Tracking guest RSVPs and coordinating wedding favors and accessories.</p>
+                    <p>Arranging accommodations, transportation, and childcare.</p>
+                    <p>Preparing welcome bags for your guests.</p>
+                    <p>Guiding you through the marriage license process and offering etiquette advice.</p>
+                    <p>Offering unlimited consultations and meetings.</p>
+                    <p>Confirming details with all vendors and attending vendor meetings.</p>
+                    <p>Leading the ceremony rehearsal.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">Wedding Day Coordination</button>
+                <div class="accordion-content">
+                    <p>Unlimited on-site coordination with a dedicated planner and assistant.</p>
+                    <p>Managing the ceremony processional and ensuring smooth transitions.</p>
+                    <p>Overseeing the setup of the ceremony and reception, including guest books, place cards, favors, and more.</p>
+                    <p>Coordinating boutonnière pinning and flower distribution for VIPs.</p>
+                    <p>Serving as the main point of contact for all vendors.</p>
+                    <p>Supporting the wedding party, family, and guests throughout the event.</p>
+                    <p>Handling final payments and gratuities for vendors.</p>
+                    <p>Providing an emergency kit for last-minute needs.</p>
+                    <p>Addressing unforeseen issues with professionalism and discretion.</p>
+                    <p>Managing post-event load-out.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">Optional Add-Ons</button>
+                <div class="accordion-content">
+                    <p>Coordination and planning for additional events such as welcome parties, rehearsal dinners, or post-wedding brunches.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 5: Decor Consultation -->
+<div id="decor-consultation-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Decor Consultation</h2>
+        <div class="service-info">
+            <p>Our Theme, Decoration, and Styling Consultation package is perfect for couples who want their wedding to reflect their unique style and vision. From conceptualizing a stunning theme to meticulously planning each decorative detail, we provide expert guidance to ensure your wedding day is visually captivating and unforgettable.</p>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-header">Pre-Wedding Planning</button>
+                <div class="accordion-content">
+                    <p>Crafting a customized wedding planning timeline and checklist.</p>
+                    <p>Setting priorities, managing budgets, and tracking expenses.</p>
+                    <p>Scouting and securing ceremony and reception venues.</p>
+                    <p>Providing expert vendor recommendations, negotiation support, and bookings.</p>
+                    <p>Managing vendors throughout the planning process.</p>
+                    <p>Designing and executing a personalized wedding theme.</p>
+                    <p>Organising save-the-dates, invitations, and printed materials.</p>
+                    <p>Tracking guest RSVPs and coordinating wedding favors and accessories.</p>
+                    <p>Arranging accommodations, transportation, and childcare.</p>
+                    <p>Preparing welcome bags for your guests.</p>
+                    <p>Guiding you through the marriage license process and offering etiquette advice.</p>
+                    <p>Offering unlimited consultations and meetings.</p>
+                    <p>Confirming details with all vendors and attending vendor meetings.</p>
+                    <p>Leading the ceremony rehearsal.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">Wedding Day Coordination</button>
+                <div class="accordion-content">
+                    <p>Unlimited on-site coordination with a dedicated planner and assistant.</p>
+                    <p>Managing the ceremony processional and ensuring smooth transitions.</p>
+                    <p>Overseeing the setup of the ceremony and reception, including guest books, place cards, favors, and more.</p>
+                    <p>Coordinating boutonnière pinning and flower distribution for VIPs.</p>
+                    <p>Serving as the main point of contact for all vendors.</p>
+                    <p>Supporting the wedding party, family, and guests throughout the event.</p>
+                    <p>Handling final payments and gratuities for vendors.</p>
+                    <p>Providing an emergency kit for last-minute needs.</p>
+                    <p>Addressing unforeseen issues with professionalism and discretion.</p>
+                    <p>Managing post-event load-out.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">Optional Add-Ons</button>
+                <div class="accordion-content">
+                    <p>Coordination and planning for additional events such as welcome parties, rehearsal dinners, or post-wedding brunches.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 6: Culture & Traditions -->
+<div id="culture-traditions-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Culture & Traditions</h2>
+        <div class="service-info">
+            <p>Our Culture and Traditions package is designed for couples who want to infuse their wedding with meaningful cultural elements, creating a celebration that honors their heritage and traditions. From traditional ceremonies to cultural attire and rituals, we help integrate these beautiful customs seamlessly into your wedding day, ensuring a rich and authentic experience for you and your guests.</p>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-header">Pre-Wedding Planning</button>
+                <div class="accordion-content">
+                    <p>Crafting a customized wedding planning timeline and checklist.</p>
+                    <p>Setting priorities, managing budgets, and tracking expenses.</p>
+                    <p>Scouting and securing ceremony and reception venues.</p>
+                    <p>Providing expert vendor recommendations, negotiation support, and bookings.</p>
+                    <p>Managing vendors throughout the planning process.</p>
+                    <p>Designing and executing a personalized wedding theme.</p>
+                    <p>Organising save-the-dates, invitations, and printed materials.</p>
+                    <p>Tracking guest RSVPs and coordinating wedding favors and accessories.</p>
+                    <p>Arranging accommodations, transportation, and childcare.</p>
+                    <p>Preparing welcome bags for your guests.</p>
+                    <p>Guiding you through the marriage license process and offering etiquette advice.</p>
+                    <p>Offering unlimited consultations and meetings.</p>
+                    <p>Confirming details with all vendors and attending vendor meetings.</p>
+                    <p>Leading the ceremony rehearsal.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">Wedding Day Coordination</button>
+                <div class="accordion-content">
+                    <p>Unlimited on-site coordination with a dedicated planner and assistant.</p>
+                    <p>Managing the ceremony processional and ensuring smooth transitions.</p>
+                    <p>Overseeing the setup of the ceremony and reception, including guest books, place cards, favors, and more.</p>
+                    <p>Coordinating boutonnière pinning and flower distribution for VIPs.</p>
+                    <p>Serving as the main point of contact for all vendors.</p>
+                    <p>Supporting the wedding party, family, and guests throughout the event.</p>
+                    <p>Handling final payments and gratuities for vendors.</p>
+                    <p>Providing an emergency kit for last-minute needs.</p>
+                    <p>Addressing unforeseen issues with professionalism and discretion.</p>
+                    <p>Managing post-event load-out.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">Optional Add-Ons</button>
+                <div class="accordion-content">
+                    <p>Coordination and planning for additional events such as welcome parties, rehearsal dinners, or post-wedding brunches.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/tabswitching.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+/* General Styles */
+body {
+    font-family: 'Merriweather', serif;
+    color: #5A082D;
+    margin: 0;
+    padding: 0;
+}
+
+/* Rectangle 66 */
+.rectangle-66 {
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    left: 0;
+    top: 0;
+    background: #FADADD;
+    z-index: 1;
+}
+
+/* Navbar */
+.navbar {
+    position: absolute; /* Position navbar absolutely */
+    top: 0; /* Place it at the top */
+    left: 0;
+    width: 100%;
+    z-index: 10; /* Ensure it's above the background image and Rectangle 36 */
+    background: transparent !important; /* Make navbar background transparent */
+}
+
+.navbar-brand {
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    font-weight: 400;
+    color: #5A082D !important; /* Ensure brand name is visible */
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img.logo {
+    width: 72px;
+    height: 93px;
+    margin-right: 10px;
+}
+
+.nav-link {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    margin-left: 20px;
+    color: #5A082D !important; /* Ensure nav links are visible */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 0%;
+}
+
+/* Navbar Active Link */
+.nav-link.active {
+    font-weight: bold; /* Highlight active link */
+    color: #5A082D !important; /* Ensure color matches theme */
+    border-bottom: 2px solid #5A082D; /* Add underline for active link */
+}
+
+.nav-link.contact-us {
+    position: relative;
+    z-index: 2; /* Ensures text stays above the rectangle */
+    background-color: #FFFFF0; /* Gold background color */
+    color: #5A082D !important; /* Text color */
+    border-radius: 50px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+.nav-link.contact-us:hover {
+    background-color: #5A082D; /* Darker background on hover */
+    color: #FFD700 !important; /* Text color on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+.nav-link.contact-us::before {
+    content: '\260E'; /* Telephone icon */
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 18px; /* Icon size */
+}
+
+/* FAQ Heading */
+.faq-heading {
+    position: absolute;
+    top: 4%; /* Position below the navbar */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5; /* Ensure it's above the rectangle and navbar */
+    margin-left: -2%;
+}
+
+.faq-heading h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 70px;
+    font-weight: 400;
+    color: #5A082D;
+    margin: 0;
+    backdrop-filter: blur(2px);
+}
+
+/* FAQ Container */
+.faq-container {
+    max-width: 800px;
+    margin: 250px auto 0; /* Adjusted for navbar and heading */
+    padding: 20px;
+    z-index: 2;
+    margin-top: 11%;
+}
+
+/* Accordion Styles */
+.accordion-button {
+    font-family: 'Merriweather', serif;
+    font-size: 1.0rem;
+    color: #5A082D;
+    background-color: #fff;
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    animation: slideIn 1s ease-in-out; /* Slide-in animation */
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #fff0f5;
+    color: #5A082D;
+}
+
+.accordion-button:hover {
+    background-color: #FADADD; /* Change background on hover */
+    color: #D90429; /* Change text color on hover */
+}
+
+.accordion-body {
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 20px;
+    color: #5A082D;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-top: none;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
